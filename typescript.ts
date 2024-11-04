@@ -15,17 +15,55 @@
 
 // Number: Used to represent numeric values.
 
+let number: Number;
+
+number = 4;
+
 // String: Used to represent text.
+
+let string = "Myros";
+const string2 = "Preston";
+const string3 = `hello`;
+
+let string4: String;
 
 // Boolean: Used to represent true or false values.
 
+const bool: Boolean = true;
+
 // Null: Represents the intentional absence of any object value.
+
+let nullVar: null | string;
+
+nullVar = "hello world";
 
 // Undefined: Represents an uninitialized variable.
 
+let name4: undefined | number;
+
+name4 = 4;
+
 // Array: Used to store multiple values in a single variable.
 
+let days = ["mon", "wed", "fri"];
+
+let months: Array<number>;
+
+months = [1, 2, 3, 4];
+
+console.log(days[0]);
+
 // Object: Used to store a collection of key-value pairs.
+
+type Person = {
+	name: string;
+	age: number;
+};
+
+let myObj: Person = {
+	name: "Myros",
+	age: 14,
+};
 
 // Tuple: Used to store an array with a fixed number of elements of different types.
 
@@ -34,4 +72,3 @@
 // Any: Used to store any type of value. Use with caution as it can defeat the purpose of TypeScript's type safety.
 
 // Void: Used to represent the absence of any type, commonly used as the return type of functions that do not return a value.
-
